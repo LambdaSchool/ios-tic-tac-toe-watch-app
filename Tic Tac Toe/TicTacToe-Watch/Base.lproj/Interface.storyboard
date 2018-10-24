@@ -8,17 +8,17 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Tic Tac Toe Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_Watch" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="TicTacToeInterfaceController" customModule="TicTacToe_Watch" customModuleProvider="target">
                     <items>
                         <group width="1" alignment="left" id="3R4-sN-SBJ">
                             <items>
-                                <button width="0.29999999999999999" height="22" alignment="left" title="Reset" id="rwQ-20-QYE">
+                                <button width="0.29999999999999999" height="20" alignment="left" title="Reset" id="rwQ-20-QYE">
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                 </button>
-                                <label width="90" height="23" alignment="left" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="DWh-Sj-leb"/>
+                                <label width="90" alignment="left" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="DWh-Sj-leb"/>
                             </items>
                         </group>
                         <group width="1" alignment="left" contentMode="scaleAspectFill" id="PaG-cX-FJ8">

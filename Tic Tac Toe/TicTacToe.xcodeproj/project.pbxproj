@@ -10,7 +10,7 @@
 		1379AB9321810067009608BD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1379AB9121810067009608BD /* Interface.storyboard */; };
 		1379AB9521810069009608BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1379AB9421810069009608BD /* Assets.xcassets */; };
 		1379AB9C2181006A009608BD /* TicTacToe-Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1379AB9B21810069009608BD /* TicTacToe-Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1379ABA12181006A009608BD /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379ABA02181006A009608BD /* InterfaceController.swift */; };
+		1379ABA12181006A009608BD /* TicTacToeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379ABA02181006A009608BD /* TicTacToeInterfaceController.swift */; };
 		1379ABA32181006A009608BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379ABA22181006A009608BD /* ExtensionDelegate.swift */; };
 		1379ABA52181006A009608BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1379ABA42181006A009608BD /* Assets.xcassets */; };
 		1379ABA92181006A009608BD /* TicTacToe-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1379AB8F21810067009608BD /* TicTacToe-Watch.app */; };
@@ -83,7 +83,7 @@
 		1379AB9421810069009608BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1379AB9621810069009608BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1379AB9B21810069009608BD /* TicTacToe-Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TicTacToe-Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1379ABA02181006A009608BD /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1379ABA02181006A009608BD /* TicTacToeInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeInterfaceController.swift; sourceTree = "<group>"; };
 		1379ABA22181006A009608BD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		1379ABA42181006A009608BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1379ABA62181006A009608BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		1379AB9F2181006A009608BD /* TicTacToe-Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				1379ABA02181006A009608BD /* InterfaceController.swift */,
+				1379ABA02181006A009608BD /* TicTacToeInterfaceController.swift */,
 				1379ABA22181006A009608BD /* ExtensionDelegate.swift */,
 				1379ABA42181006A009608BD /* Assets.xcassets */,
 				1379ABA62181006A009608BD /* Info.plist */,
@@ -372,7 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1379ABA32181006A009608BD /* ExtensionDelegate.swift in Sources */,
-				1379ABA12181006A009608BD /* InterfaceController.swift in Sources */,
+				1379ABA12181006A009608BD /* TicTacToeInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
