@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 enum GameBoardError: Error, Equatable {
     case invalidSquare
 }
