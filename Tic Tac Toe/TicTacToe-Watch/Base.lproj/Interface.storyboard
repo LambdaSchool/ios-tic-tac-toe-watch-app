@@ -1,15 +1,51 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11134" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11055"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_Watch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="3R4-sN-SBJ">
+                            <items>
+                                <button width="0.29999999999999999" height="22" alignment="left" title="Reset" id="rwQ-20-QYE">
+                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                </button>
+                                <label width="90" height="23" alignment="left" text="X Wins!" textAlignment="right" id="DWh-Sj-leb"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="PaG-cX-FJ8">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" id="b7M-6c-XGS"/>
+                                <button width="0.33000000000000002" alignment="left" id="bkO-Ls-0bF"/>
+                                <button width="0.33000000000000002" alignment="left" id="Fxa-NU-Tco"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="aJ4-UI-BBb">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" id="1Rm-mu-oYQ"/>
+                                <button width="0.33000000000000002" alignment="left" id="eOf-QI-xDh"/>
+                                <button width="0.33000000000000002" alignment="left" id="E5Q-HD-Xl6"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="5Ez-f8-dDl">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" id="aJD-2F-njK"/>
+                                <button width="0.33000000000000002" alignment="left" id="5tN-Ov-yNy"/>
+                                <button width="0.33000000000000002" alignment="left" id="rUq-Nw-J2A"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="69" y="78"/>
         </scene>
     </scenes>
 </document>
