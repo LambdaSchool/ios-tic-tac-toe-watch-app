@@ -21,7 +21,7 @@
                                         <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="cS4-bI-e07"/>
                                     </connections>
                                 </button>
-                                <label width="78" alignment="right" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.59999999999999998" id="DWh-Sj-leb">
+                                <label width="78" alignment="right" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.69999999999999996" id="DWh-Sj-leb">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                             </items>

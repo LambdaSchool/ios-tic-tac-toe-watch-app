@@ -45,10 +45,12 @@ class TicTacToeInterfaceController: WKInterfaceController {
     // MARK: - IBActions
     @IBAction func resetButtonTapped() {
         game.restart()
-        self.buttons.forEach {
-            $0.setTitle("")
-            $0.setEnabled(true)
-            $0.setBackgroundColor(UIColor.darkGray)
+        self.buttons.forEach { button in
+            animate(withDuration: 0.5, animations: {
+                button.setTitle("")
+                button.setEnabled(true)
+                button.setBackgroundColor(UIColor.darkGray)
+            })
         }
     }
     @IBAction func buttonZeroZeroTapped() {
