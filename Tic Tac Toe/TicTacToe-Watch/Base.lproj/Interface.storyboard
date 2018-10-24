@@ -21,22 +21,33 @@
                                         <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="cS4-bI-e07"/>
                                     </connections>
                                 </button>
-                                <label width="90" alignment="left" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="DWh-Sj-leb"/>
+                                <label width="90" alignment="right" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="DWh-Sj-leb">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
                             </items>
                         </group>
                         <group width="1" alignment="left" contentMode="scaleAspectFill" id="PaG-cX-FJ8">
                             <items>
                                 <button width="0.33000000000000002" alignment="left" id="b7M-6c-XGS">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonZeroZeroTapped" destination="AgC-eL-Hgc" id="6Yo-Fb-PZN"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" alignment="left" id="bkO-Ls-0bF">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonOneZeroTapped" destination="AgC-eL-Hgc" id="caF-TP-fVS"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" alignment="left" id="Fxa-NU-Tco">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonTwoZeroTapped" destination="AgC-eL-Hgc" id="TtM-2W-u6U"/>
                                     </connections>
@@ -46,16 +57,25 @@
                         <group width="1" alignment="left" contentMode="scaleAspectFill" id="aJ4-UI-BBb">
                             <items>
                                 <button width="0.33000000000000002" alignment="left" id="1Rm-mu-oYQ">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonZeroOneTapped" destination="AgC-eL-Hgc" id="Pwo-GU-VAS"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" alignment="left" id="eOf-QI-xDh">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonOneOneTapped" destination="AgC-eL-Hgc" id="74b-LE-8rG"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" alignment="left" id="E5Q-HD-Xl6">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonTwoOneTapped" destination="AgC-eL-Hgc" id="BGF-OA-Khk"/>
                                     </connections>
@@ -65,16 +85,25 @@
                         <group width="1" alignment="left" contentMode="scaleAspectFill" id="5Ez-f8-dDl">
                             <items>
                                 <button width="0.33000000000000002" alignment="left" id="aJD-2F-njK">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonZeroTwoTapped" destination="AgC-eL-Hgc" id="M6p-f4-LPE"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" alignment="left" id="5tN-Ov-yNy">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonOneTwoTapped" destination="AgC-eL-Hgc" id="2Kn-HU-6wb"/>
                                     </connections>
                                 </button>
                                 <button width="0.33000000000000002" alignment="left" id="rUq-Nw-J2A">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="28"/>
                                     <connections>
                                         <action selector="buttonTwoTwoTapped" destination="AgC-eL-Hgc" id="URs-fs-ewY"/>
                                     </connections>
