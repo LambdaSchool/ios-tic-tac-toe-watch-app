@@ -12,38 +12,103 @@ import Foundation
 
 
 class GameInterfaceController: WKInterfaceController {
-
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        // Configure interface objects here.
+        gameBoard = game.board
+        
     }
     
     // MARK: - IBActions
     @IBAction func reset() {
+        game.restart()
     }
     @IBAction func tile1Tapped() {
+        do {
+            try game.makeMark(at: (0,0))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile2Tapped() {
+        do{
+            try game.makeMark(at: (1,0))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile3Tapped() {
+        do {
+            try game.makeMark(at: (2,0))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile4Tapped() {
+        do{
+            try game.makeMark(at: (1,0))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile5Tapped() {
+        do{
+            try game.makeMark(at: (1,1))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile6Tapped() {
+        do {
+            try game.makeMark(at: (1,2))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile7Tapped() {
+        do{
+            try game.makeMark(at: (2,0))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile8Tapped() {
+        do{
+            try game.makeMark(at: (2,1))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     @IBAction func tile9Tapped() {
+        do {
+            try game.makeMark(at: (2,2))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
-    
+    //MARK: - Private Methods
+    func updateButtons(){
+        
+    }
+    func updateLabel(){
+        if let winner = game.winningPlayer?.stringValue {
+            label.setText("Player \(winner) won!")
+        } else if let player = game.activePlayer?.stringValue {
+            label.setText("Player \(player)'s turn")
+        } else if game.isOver {
+            label.setText("Cat's game!")
+        }
+    }
     
     
     // MARK: - Properties
-    let gameBoard = GameBoard()
+    private var game = Game()
+    
+    private var gameBoard: GameBoard!{
+        didSet{
+            updateButtons()
+        }
+    }
     
     //IBOutlets
     @IBOutlet weak var label: WKInterfaceLabel!
@@ -57,5 +122,5 @@ class GameInterfaceController: WKInterfaceController {
     @IBOutlet weak var tile7: WKInterfaceButton!
     @IBOutlet weak var tile8: WKInterfaceButton!
     @IBOutlet weak var tile9: WKInterfaceButton!
-
+    
 }
