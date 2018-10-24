@@ -15,10 +15,10 @@
                     <items>
                         <group width="1" alignment="left" id="dUb-gL-RQd">
                             <items>
-                                <label width="88" alignment="left" verticalAlignment="center" text="Label" id="Scl-OW-Qxq">
+                                <label width="0.66600000000000004" alignment="left" verticalAlignment="center" text="Label" id="Scl-OW-Qxq">
                                     <fontDescription key="font" type="system" pointSize="10"/>
                                 </label>
-                                <button width="44" alignment="left" title="Reset" id="bOX-WV-mJX">
+                                <button width="0.33300000000000002" alignment="left" title="Reset" id="bOX-WV-mJX">
                                     <fontDescription key="font" type="system" pointSize="11"/>
                                     <connections>
                                         <action selector="reset" destination="AgC-eL-Hgc" id="2fv-UN-pZr"/>
@@ -28,17 +28,17 @@
                         </group>
                         <group width="1" alignment="center" id="C5T-q7-yXt">
                             <items>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="0" id="Zaw-7f-SpB">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="0" id="Zaw-7f-SpB">
                                     <connections>
                                         <action selector="one" destination="AgC-eL-Hgc" id="Zfi-fT-fXW"/>
                                     </connections>
                                 </button>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="1" id="ku3-AV-KxO">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="1" id="ku3-AV-KxO">
                                     <connections>
                                         <action selector="two" destination="AgC-eL-Hgc" id="1ef-81-GbX"/>
                                     </connections>
                                 </button>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="2" id="sKg-Id-Isc">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="2" id="sKg-Id-Isc">
                                     <connections>
                                         <action selector="three" destination="AgC-eL-Hgc" id="Au6-CN-OEK"/>
                                     </connections>
@@ -47,17 +47,17 @@
                         </group>
                         <group width="1" alignment="left" id="igU-Va-cNc">
                             <items>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="3" id="nAr-NN-7XH">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="3" id="nAr-NN-7XH">
                                     <connections>
                                         <action selector="four" destination="AgC-eL-Hgc" id="a3d-Ee-I5f"/>
                                     </connections>
                                 </button>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="4" id="lGJ-Wh-Dy2">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="4" id="lGJ-Wh-Dy2">
                                     <connections>
                                         <action selector="five" destination="AgC-eL-Hgc" id="vdc-XQ-J2l"/>
                                     </connections>
                                 </button>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="5" id="pAe-1z-7Az">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="5" id="pAe-1z-7Az">
                                     <connections>
                                         <action selector="six" destination="AgC-eL-Hgc" id="4rT-X2-dHf"/>
                                     </connections>
@@ -66,17 +66,17 @@
                         </group>
                         <group width="1" alignment="left" id="k5h-Wc-TPo">
                             <items>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="6" id="FQ1-jf-bnG">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="6" id="FQ1-jf-bnG">
                                     <connections>
                                         <action selector="seven" destination="AgC-eL-Hgc" id="MDX-Dz-fLB"/>
                                     </connections>
                                 </button>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="7" id="KUH-Rv-rFr">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="7" id="KUH-Rv-rFr">
                                     <connections>
                                         <action selector="eight" destination="AgC-eL-Hgc" id="ou2-IM-iJL"/>
                                     </connections>
                                 </button>
-                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="8" id="ZJn-bk-hsx">
+                                <button width="0.33300000000000002" alignment="center" verticalAlignment="center" accessibilityIdentifier="8" id="ZJn-bk-hsx">
                                     <connections>
                                         <action selector="nine" destination="AgC-eL-Hgc" id="wDQ-b5-mm8"/>
                                     </connections>
