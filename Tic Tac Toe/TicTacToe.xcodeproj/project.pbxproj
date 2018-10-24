@@ -14,17 +14,20 @@
 		1379ABA32181006A009608BD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1379ABA22181006A009608BD /* ExtensionDelegate.swift */; };
 		1379ABA52181006A009608BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1379ABA42181006A009608BD /* Assets.xcassets */; };
 		1379ABA92181006A009608BD /* TicTacToe-Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1379AB8F21810067009608BD /* TicTacToe-Watch.app */; };
+		1379ABB421810ABF009608BD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C6A2148CF16001A3F45 /* Game.swift */; };
+		1379ABB521810ABF009608BD /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C602148AE13001A3F45 /* GameBoard.swift */; };
+		1379ABB621810B99009608BD /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C602148AE13001A3F45 /* GameBoard.swift */; };
+		1379ABB721810B99009608BD /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C6A2148CF16001A3F45 /* Game.swift */; };
+		1379ABB821811322009608BD /* GameAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C662148B945001A3F45 /* GameAI.swift */; };
 		9DA41C3C2148ABB5001A3F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C3B2148ABB5001A3F45 /* AppDelegate.swift */; };
 		9DA41C412148ABB5001A3F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C3F2148ABB5001A3F45 /* Main.storyboard */; };
 		9DA41C432148ABB5001A3F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C422148ABB5001A3F45 /* Assets.xcassets */; };
 		9DA41C462148ABB5001A3F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C442148ABB5001A3F45 /* LaunchScreen.storyboard */; };
 		9DA41C5D2148AC00001A3F45 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C5C2148AC00001A3F45 /* GameViewController.swift */; };
 		9DA41C5F2148ADC1001A3F45 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C5E2148ADC1001A3F45 /* BoardViewController.swift */; };
-		9DA41C612148AE13001A3F45 /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C602148AE13001A3F45 /* GameBoard.swift */; };
 		9DA41C652148AE6D001A3F45 /* GameBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C622148AE68001A3F45 /* GameBoardTests.swift */; };
 		9DA41C672148B945001A3F45 /* GameAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C662148B945001A3F45 /* GameAI.swift */; };
 		9DA41C692148B9AC001A3F45 /* GameAITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C682148B9AC001A3F45 /* GameAITests.swift */; };
-		9DA41C6B2148CF16001A3F45 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C6A2148CF16001A3F45 /* Game.swift */; };
 		9DA41C6F2148D931001A3F45 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C6E2148D931001A3F45 /* GameTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -180,8 +183,8 @@
 				9DA41C5C2148AC00001A3F45 /* GameViewController.swift */,
 				9DA41C5E2148ADC1001A3F45 /* BoardViewController.swift */,
 				9DA41C602148AE13001A3F45 /* GameBoard.swift */,
-				9DA41C662148B945001A3F45 /* GameAI.swift */,
 				9DA41C6A2148CF16001A3F45 /* Game.swift */,
+				9DA41C662148B945001A3F45 /* GameAI.swift */,
 				9DA41C4D2148ABCA001A3F45 /* Resources */,
 			);
 			path = TicTacToe;
@@ -372,7 +375,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1379ABA32181006A009608BD /* ExtensionDelegate.swift in Sources */,
+				1379ABB621810B99009608BD /* GameBoard.swift in Sources */,
 				1379ABA12181006A009608BD /* TicTacToeInterfaceController.swift in Sources */,
+				1379ABB821811322009608BD /* GameAI.swift in Sources */,
+				1379ABB721810B99009608BD /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,11 +386,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA41C612148AE13001A3F45 /* GameBoard.swift in Sources */,
-				9DA41C6B2148CF16001A3F45 /* Game.swift in Sources */,
 				9DA41C5D2148AC00001A3F45 /* GameViewController.swift in Sources */,
+				1379ABB421810ABF009608BD /* Game.swift in Sources */,
 				9DA41C3C2148ABB5001A3F45 /* AppDelegate.swift in Sources */,
 				9DA41C672148B945001A3F45 /* GameAI.swift in Sources */,
+				1379ABB521810ABF009608BD /* GameBoard.swift in Sources */,
 				9DA41C5F2148ADC1001A3F45 /* BoardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
