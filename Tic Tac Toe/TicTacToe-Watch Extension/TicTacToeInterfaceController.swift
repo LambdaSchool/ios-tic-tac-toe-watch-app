@@ -86,8 +86,12 @@ class TicTacToeInterfaceController: WKInterfaceController {
         guard game.winningPlayer?.stringValue == nil else { return }
         do {
             button.setTitle(game.activePlayer?.stringValue)
+            if (game.activePlayer == .x) {
+                button.setBackgroundColor(.red)
+            } else {
+                button.setBackgroundColor(.blue)
+            }
             button.setEnabled(false)
-            button.setBackgroundColor(.white)
             updateViews()
             try game.makeMark(at: coordinate)
         } catch {
