@@ -15,7 +15,7 @@
                     <items>
                         <group height="22" alignment="center" verticalAlignment="center" spacing="35" id="ONm-rY-lsT">
                             <items>
-                                <label alignment="left" verticalAlignment="center" text="Label" id="way-Yh-M0I"/>
+                                <label alignment="left" verticalAlignment="center" text="Label" textAlignment="center" minimumScaleFactor="0.69999999999999996" id="way-Yh-M0I"/>
                                 <button width="56" height="22" alignment="left" title="Reset" id="SSq-Bf-cCC">
                                     <fontDescription key="font" type="system" pointSize="12"/>
                                     <connections>
