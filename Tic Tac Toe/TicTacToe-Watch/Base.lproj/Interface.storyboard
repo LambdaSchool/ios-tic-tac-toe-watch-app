@@ -15,13 +15,13 @@
                     <items>
                         <group width="1" alignment="left" id="3R4-sN-SBJ">
                             <items>
-                                <button width="0.29999999999999999" height="20" alignment="left" title="Reset" id="rwQ-20-QYE">
-                                    <fontDescription key="font" type="system" pointSize="10"/>
+                                <button width="46" height="20" alignment="left" title="Reset" id="rwQ-20-QYE">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
                                     <connections>
                                         <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="cS4-bI-e07"/>
                                     </connections>
                                 </button>
-                                <label width="90" alignment="right" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.80000000000000004" id="DWh-Sj-leb">
+                                <label width="78" alignment="right" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.59999999999999998" id="DWh-Sj-leb">
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                 </label>
                             </items>
@@ -56,7 +56,7 @@
                         </group>
                         <group width="1" alignment="left" contentMode="scaleAspectFill" id="aJ4-UI-BBb">
                             <items>
-                                <button width="0.33000000000000002" alignment="left" id="1Rm-mu-oYQ">
+                                <button width="0.33000000000000002" alignment="center" verticalAlignment="center" id="1Rm-mu-oYQ">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="28"/>
@@ -64,7 +64,7 @@
                                         <action selector="buttonZeroOneTapped" destination="AgC-eL-Hgc" id="Pwo-GU-VAS"/>
                                     </connections>
                                 </button>
-                                <button width="0.33000000000000002" alignment="left" id="eOf-QI-xDh">
+                                <button width="0.33000000000000002" alignment="center" verticalAlignment="center" id="eOf-QI-xDh">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="28"/>
@@ -72,7 +72,7 @@
                                         <action selector="buttonOneOneTapped" destination="AgC-eL-Hgc" id="74b-LE-8rG"/>
                                     </connections>
                                 </button>
-                                <button width="0.33000000000000002" alignment="left" id="E5Q-HD-Xl6">
+                                <button width="0.33000000000000002" alignment="center" verticalAlignment="center" id="E5Q-HD-Xl6">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="font" type="system" pointSize="28"/>
