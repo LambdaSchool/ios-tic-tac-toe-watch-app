@@ -59,7 +59,7 @@ class GameInterfaceController: WKInterfaceController {
         do{
             let mark = game.activePlayer?.stringValue
             tile4.setTitle(mark)
-            try game.makeMark(at: (1,0))
+            try game.makeMark(at: (0,1))
         } catch {
             NSLog("Illegal move")
         }
@@ -77,7 +77,7 @@ class GameInterfaceController: WKInterfaceController {
         do {
             let mark = game.activePlayer?.stringValue
             tile6.setTitle(mark)
-            try game.makeMark(at: (1,2))
+            try game.makeMark(at: (2,1))
         } catch {
             NSLog("Illegal move")
         }
@@ -86,7 +86,7 @@ class GameInterfaceController: WKInterfaceController {
         do{
             let mark = game.activePlayer?.stringValue
             tile7.setTitle(mark)
-            try game.makeMark(at: (2,0))
+            try game.makeMark(at: (0,2))
         } catch {
             NSLog("Illegal move")
         }
@@ -95,7 +95,7 @@ class GameInterfaceController: WKInterfaceController {
         do{
             let mark = game.activePlayer?.stringValue
             tile8.setTitle(mark)
-            try game.makeMark(at: (2,1))
+            try game.makeMark(at: (1,2))
         } catch {
             NSLog("Illegal move")
         }
