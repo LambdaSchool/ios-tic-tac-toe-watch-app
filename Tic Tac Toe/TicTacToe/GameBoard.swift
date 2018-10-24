@@ -8,6 +8,7 @@
 
 import Foundation
 
+
 enum GameBoardError: Error, Equatable {
     case invalidSquare
 }
@@ -56,6 +57,10 @@ struct GameBoard {
             }
         }
         return true
+    }
+    
+    func hasMarkAt(square: Coordinate) -> Bool {
+        return squares[arrayIndex(for: square)] == .empty ? false : true
     }
     
     private func arrayIndex(for square: Coordinate) -> Int {

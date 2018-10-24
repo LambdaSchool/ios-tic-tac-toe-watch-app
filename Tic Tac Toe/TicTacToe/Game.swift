@@ -14,7 +14,7 @@ enum GameError: Error {
 
 struct Game {
     
-    private enum GameState {
+     private enum GameState {
         case active(GameBoard.Mark) // Active player
         case cat
         case won(GameBoard.Mark) // Winning player

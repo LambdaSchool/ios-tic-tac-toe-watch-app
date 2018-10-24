@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 protocol BoardViewControllerDelegate: class {
     func boardViewController(_ boardViewController: BoardViewController, markWasMadeAt coordinate: Coordinate)
 }
