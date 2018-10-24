@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToeWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="dUb-gL-RQd">
+                            <items>
+                                <label width="88" alignment="left" verticalAlignment="center" text="Label" id="Scl-OW-Qxq"/>
+                                <button width="44" alignment="left" title="Reset" id="bOX-WV-mJX">
+                                    <fontDescription key="font" type="system" pointSize="11"/>
+                                    <connections>
+                                        <action selector="reset" destination="AgC-eL-Hgc" id="2fv-UN-pZr"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="C5T-q7-yXt">
+                            <items>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="0" title="x" id="Zaw-7f-SpB"/>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="1" title="x" id="ku3-AV-KxO"/>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="2" title="x" id="sKg-Id-Isc"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="igU-Va-cNc">
+                            <items>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="3" title="x" id="nAr-NN-7XH"/>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="4" title="x" id="lGJ-Wh-Dy2"/>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="5" title="x" id="pAe-1z-7Az"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="k5h-Wc-TPo">
+                            <items>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="6" title="x" id="FQ1-jf-bnG"/>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="7" title="x" id="KUH-Rv-rFr"/>
+                                <button width="44" alignment="center" verticalAlignment="center" accessibilityIdentifier="8" title="x" id="ZJn-bk-hsx"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="statusLabel" destination="Scl-OW-Qxq" id="DO6-5A-T1Y"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="35" y="28.5"/>
+        </scene>
+    </scenes>
+</document>
