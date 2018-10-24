@@ -15,16 +15,23 @@ class GameInterfaceController: WKInterfaceController {
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        gameBoard = game.board
+        tiles = [tile1,tile2,tile3,
+                 tile4,tile5,tile6,
+                 tile7,tile8,tile9]
         
     }
     
     // MARK: - IBActions
     @IBAction func reset() {
         game.restart()
+        for tile in tiles{
+            tile.setTitle("")
+        }
     }
     @IBAction func tile1Tapped() {
         do {
+            let mark = game.activePlayer?.stringValue
+            tile1.setTitle(mark)
             try game.makeMark(at: (0,0))
         } catch {
             NSLog("Illegal move")
@@ -32,6 +39,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile2Tapped() {
         do{
+            let mark = game.activePlayer?.stringValue
+            tile2.setTitle(mark)
             try game.makeMark(at: (1,0))
         } catch {
             NSLog("Illegal move")
@@ -39,6 +48,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile3Tapped() {
         do {
+            let mark = game.activePlayer?.stringValue
+            tile3.setTitle(mark)
             try game.makeMark(at: (2,0))
         } catch {
             NSLog("Illegal move")
@@ -46,6 +57,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile4Tapped() {
         do{
+            let mark = game.activePlayer?.stringValue
+            tile4.setTitle(mark)
             try game.makeMark(at: (1,0))
         } catch {
             NSLog("Illegal move")
@@ -53,6 +66,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile5Tapped() {
         do{
+            let mark = game.activePlayer?.stringValue
+            tile5.setTitle(mark)
             try game.makeMark(at: (1,1))
         } catch {
             NSLog("Illegal move")
@@ -60,6 +75,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile6Tapped() {
         do {
+            let mark = game.activePlayer?.stringValue
+            tile6.setTitle(mark)
             try game.makeMark(at: (1,2))
         } catch {
             NSLog("Illegal move")
@@ -67,6 +84,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile7Tapped() {
         do{
+            let mark = game.activePlayer?.stringValue
+            tile7.setTitle(mark)
             try game.makeMark(at: (2,0))
         } catch {
             NSLog("Illegal move")
@@ -74,6 +93,8 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile8Tapped() {
         do{
+            let mark = game.activePlayer?.stringValue
+            tile8.setTitle(mark)
             try game.makeMark(at: (2,1))
         } catch {
             NSLog("Illegal move")
@@ -81,15 +102,14 @@ class GameInterfaceController: WKInterfaceController {
     }
     @IBAction func tile9Tapped() {
         do {
+            let mark = game.activePlayer?.stringValue
+            tile9.setTitle(mark)
             try game.makeMark(at: (2,2))
         } catch {
             NSLog("Illegal move")
         }
     }
     //MARK: - Private Methods
-    func updateButtons(){
-        
-    }
     func updateLabel(){
         if let winner = game.winningPlayer?.stringValue {
             label.setText("Player \(winner) won!")
@@ -102,17 +122,16 @@ class GameInterfaceController: WKInterfaceController {
     
     
     // MARK: - Properties
-    private var game = Game()
-    
-    private var gameBoard: GameBoard!{
+    private var game = Game(){
         didSet{
-            updateButtons()
+            updateLabel()
         }
     }
     
+    private var tiles: [WKInterfaceButton]!
+    
     //IBOutlets
     @IBOutlet weak var label: WKInterfaceLabel!
-    
     @IBOutlet weak var tile1: WKInterfaceButton!
     @IBOutlet weak var tile2: WKInterfaceButton!
     @IBOutlet weak var tile3: WKInterfaceButton!
@@ -122,5 +141,4 @@ class GameInterfaceController: WKInterfaceController {
     @IBOutlet weak var tile7: WKInterfaceButton!
     @IBOutlet weak var tile8: WKInterfaceButton!
     @IBOutlet weak var tile9: WKInterfaceButton!
-    
 }
