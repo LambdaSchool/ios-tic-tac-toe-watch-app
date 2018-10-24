@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Tic Tac Toe Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="TicTacToeInterfaceController" customModule="TicTacToe_Watch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="3R4-sN-SBJ">
+                            <items>
+                                <button width="46" height="20" alignment="left" title="Reset" id="rwQ-20-QYE">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="cS4-bI-e07"/>
+                                    </connections>
+                                </button>
+                                <label width="78" alignment="right" text="Player X's turn" textAlignment="right" minimumScaleFactor="0.69999999999999996" id="DWh-Sj-leb">
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="PaG-cX-FJ8">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" id="b7M-6c-XGS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonZeroZeroTapped" destination="AgC-eL-Hgc" id="6Yo-Fb-PZN"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="left" id="bkO-Ls-0bF">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonOneZeroTapped" destination="AgC-eL-Hgc" id="caF-TP-fVS"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="left" id="Fxa-NU-Tco">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonTwoZeroTapped" destination="AgC-eL-Hgc" id="TtM-2W-u6U"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="aJ4-UI-BBb">
+                            <items>
+                                <button width="0.33000000000000002" alignment="center" verticalAlignment="center" id="1Rm-mu-oYQ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonZeroOneTapped" destination="AgC-eL-Hgc" id="Pwo-GU-VAS"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="center" verticalAlignment="center" id="eOf-QI-xDh">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonOneOneTapped" destination="AgC-eL-Hgc" id="74b-LE-8rG"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="center" verticalAlignment="center" id="E5Q-HD-Xl6">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonTwoOneTapped" destination="AgC-eL-Hgc" id="BGF-OA-Khk"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" contentMode="scaleAspectFill" id="5Ez-f8-dDl">
+                            <items>
+                                <button width="0.33000000000000002" alignment="left" id="aJD-2F-njK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonZeroTwoTapped" destination="AgC-eL-Hgc" id="M6p-f4-LPE"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="left" id="5tN-Ov-yNy">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonOneTwoTapped" destination="AgC-eL-Hgc" id="2Kn-HU-6wb"/>
+                                    </connections>
+                                </button>
+                                <button width="0.33000000000000002" alignment="left" id="rUq-Nw-J2A">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" weight="heavy" pointSize="29"/>
+                                    <connections>
+                                        <action selector="buttonTwoTwoTapped" destination="AgC-eL-Hgc" id="URs-fs-ewY"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonOneOne" destination="eOf-QI-xDh" id="upN-CF-Qhk"/>
+                        <outlet property="buttonOneTwo" destination="5tN-Ov-yNy" id="ih3-Q3-piz"/>
+                        <outlet property="buttonOneZero" destination="bkO-Ls-0bF" id="n37-Lj-sDU"/>
+                        <outlet property="buttonTwoOne" destination="E5Q-HD-Xl6" id="0zW-cZ-hb7"/>
+                        <outlet property="buttonTwoTwo" destination="rUq-Nw-J2A" id="VOz-GL-bGq"/>
+                        <outlet property="buttonTwoZero" destination="Fxa-NU-Tco" id="fHH-D4-aRv"/>
+                        <outlet property="buttonZeroOne" destination="1Rm-mu-oYQ" id="8Bx-iR-Vmw"/>
+                        <outlet property="buttonZeroTwo" destination="aJD-2F-njK" id="325-hY-pJ0"/>
+                        <outlet property="buttonZeroZero" destination="b7M-6c-XGS" id="E7N-Ue-YgO"/>
+                        <outlet property="statusLabel" destination="DWh-Sj-leb" id="mZg-sm-3Vf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="69" y="78"/>
+        </scene>
+    </scenes>
+</document>
