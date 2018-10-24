@@ -45,7 +45,7 @@ class TicTacToeInterfaceController: WKInterfaceController {
     // MARK: - IBActions
     @IBAction func resetButtonTapped() {
         game.restart()
-        self.buttons.forEach { $0.setTitle("") }
+        self.buttons.forEach { $0.setTitle(""); $0.setEnabled(true) }
     }
     @IBAction func buttonZeroZeroTapped() {
         mark(coordinate: (0, 0), button: buttonZeroZero)
@@ -80,6 +80,7 @@ class TicTacToeInterfaceController: WKInterfaceController {
         guard game.winningPlayer?.stringValue == nil else { return }
         do {
             button.setTitle(game.activePlayer?.stringValue)
+            button.setEnabled(false)
             updateViews()
             try game.makeMark(at: coordinate)
         } catch {
