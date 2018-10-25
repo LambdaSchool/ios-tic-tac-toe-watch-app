@@ -71,18 +71,18 @@
                                     <items>
                                         <button width="0.29999999999999999" height="35" alignment="center" id="nNc-Iw-TlQ">
                                             <connections>
-                                                <action selector="markButton8" destination="AgC-eL-Hgc" id="gM0-YX-jDL"/>
+                                                <action selector="markButton6" destination="AgC-eL-Hgc" id="Ivv-lV-4dn"/>
                                             </connections>
                                         </button>
                                         <button width="0.29999999999999999" height="35" alignment="center" id="Ik6-aM-YbE">
                                             <connections>
-                                                <action selector="markButton6" destination="AgC-eL-Hgc" id="4Uh-IM-fxD"/>
+                                                <action selector="markButton7" destination="AgC-eL-Hgc" id="cGx-8y-awa"/>
                                             </connections>
                                         </button>
                                         <button width="0.29999999999999999" height="35" alignment="center" id="HMk-Z7-JXt">
                                             <fontDescription key="font" type="system" pointSize="15"/>
                                             <connections>
-                                                <action selector="markButton7" destination="AgC-eL-Hgc" id="lB2-Uu-ZHc"/>
+                                                <action selector="markButton8" destination="AgC-eL-Hgc" id="Ynn-aj-FRs"/>
                                             </connections>
                                         </button>
                                     </items>
@@ -98,9 +98,9 @@
                         <outlet property="button3" destination="hM4-Vy-SJw" id="9sl-Vn-DdZ"/>
                         <outlet property="button4" destination="xXG-A6-6Z9" id="wUI-8B-Hxs"/>
                         <outlet property="button5" destination="dDY-r8-BSZ" id="K3l-FE-L4X"/>
-                        <outlet property="button6" destination="Ik6-aM-YbE" id="bQp-K3-jLF"/>
-                        <outlet property="button7" destination="HMk-Z7-JXt" id="uD9-5o-mWy"/>
-                        <outlet property="button8" destination="nNc-Iw-TlQ" id="h4N-r7-RNr"/>
+                        <outlet property="button6" destination="nNc-Iw-TlQ" id="n3l-Pb-Cdg"/>
+                        <outlet property="button7" destination="Ik6-aM-YbE" id="MLY-gc-Ogd"/>
+                        <outlet property="button8" destination="HMk-Z7-JXt" id="yRX-yr-vLt"/>
                         <outlet property="statusLabel" destination="ZGM-hF-u6L" id="5Fh-Qe-rFl"/>
                     </connections>
                 </controller>

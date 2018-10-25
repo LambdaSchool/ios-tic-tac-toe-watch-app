@@ -35,9 +35,9 @@ class GameInterfaceController: WKInterfaceController {
     @IBOutlet weak var button8: WKInterfaceButton!
     
     /*
-     (0, 0) (0, 1) (0, 2)
-     (1, 0) (1, 1) (1, 2)
-     (2, 0) (2, 1) (2, 2)
+     (0, 0) (1, 0) (2, 0)
+     (0, 1) (1, 1) (2, 1)
+     (0, 2) (1, 2) (2, 2)
     */
     
     @IBAction func markButton0() {
@@ -45,15 +45,15 @@ class GameInterfaceController: WKInterfaceController {
     }
     
     @IBAction func markButton1() {
-        mark(at: (0, 1))
+        mark(at: (1, 0))
     }
     
     @IBAction func markButton2() {
-        mark(at: (0, 2))
+        mark(at: (2, 0))
     }
     
     @IBAction func markButton3() {
-        mark(at: (1, 0))
+        mark(at: (0, 1))
     }
     
     @IBAction func markButton4() {
@@ -61,15 +61,15 @@ class GameInterfaceController: WKInterfaceController {
     }
     
     @IBAction func markButton5() {
-        mark(at: (1, 2))
+        mark(at: (2, 1))
     }
     
     @IBAction func markButton6() {
-        mark(at: (2, 0))
+        mark(at: (0, 2))
     }
     
     @IBAction func markButton7() {
-        mark(at: (2, 1))
+        mark(at: (1, 2))
     }
     
     @IBAction func markButton8() {
@@ -111,13 +111,13 @@ class GameInterfaceController: WKInterfaceController {
         }
         
         button0.setTitle(game.board[(0, 0)]?.stringValue ?? "")
-        button1.setTitle(game.board[(0, 1)]?.stringValue ?? "")
-        button2.setTitle(game.board[(0, 2)]?.stringValue ?? "")
-        button3.setTitle(game.board[(1, 0)]?.stringValue ?? "")
+        button1.setTitle(game.board[(1, 0)]?.stringValue ?? "")
+        button2.setTitle(game.board[(2, 0)]?.stringValue ?? "")
+        button3.setTitle(game.board[(0, 1)]?.stringValue ?? "")
         button4.setTitle(game.board[(1, 1)]?.stringValue ?? "")
-        button5.setTitle(game.board[(1, 2)]?.stringValue ?? "")
-        button6.setTitle(game.board[(2, 0)]?.stringValue ?? "")
-        button7.setTitle(game.board[(2, 1)]?.stringValue ?? "")
+        button5.setTitle(game.board[(2, 1)]?.stringValue ?? "")
+        button6.setTitle(game.board[(0, 2)]?.stringValue ?? "")
+        button7.setTitle(game.board[(1, 2)]?.stringValue ?? "")
         button8.setTitle(game.board[(2, 2)]?.stringValue ?? "")
         
         // If we set the button title in the @IBAction, we would need to do the same thing in resetGamer() so we can clear the board.
