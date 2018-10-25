@@ -15,7 +15,7 @@
                     <items>
                         <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="YgK-cm-uo6">
                             <items>
-                                <group width="1" alignment="center" id="rvv-vh-L1S">
+                                <group width="136" height="25" alignment="center" id="rvv-vh-L1S">
                                     <items>
                                         <label width="85" alignment="center" verticalAlignment="center" text="Player O won!" textAlignment="left" minimumScaleFactor="0.69999999999999996" id="ZGM-hF-u6L"/>
                                         <button width="40" height="25" alignment="center" verticalAlignment="center" title="Reset" id="MdD-B5-dJ8">
@@ -88,7 +88,7 @@
                                     </items>
                                 </group>
                             </items>
-                            <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="0.0"/>
+                            <edgeInsets key="margins" left="0.0" right="0.0" top="30" bottom="0.0"/>
                         </group>
                     </items>
                     <connections>
@@ -102,10 +102,38 @@
                         <outlet property="button7" destination="Ik6-aM-YbE" id="MLY-gc-Ogd"/>
                         <outlet property="button8" destination="HMk-Z7-JXt" id="yRX-yr-vLt"/>
                         <outlet property="statusLabel" destination="ZGM-hF-u6L" id="5Fh-Qe-rFl"/>
+                        <segue destination="JZa-wl-eCs" kind="relationship" relationship="nextPage" id="54I-mU-RZC"/>
                     </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="33.580246913580247" y="30.63451776649746"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Pt9-Fd-Rap">
+            <objects>
+                <controller title="History" id="JZa-wl-eCs" customClass="HistoryInterfaceController" customModule="TicTacToeWatch_Extension">
+                    <items>
+                        <table alignment="left" id="OkP-qG-Juu">
+                            <items>
+                                <tableRow identifier="HistoryRow" id="XDY-YB-ozW" customClass="HistoryCell" customModule="TicTacToeWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="t83-Qj-lUY">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="d5U-YZ-Y0i"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="label" destination="d5U-YZ-Y0i" id="JwH-NJ-MsY"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="OkP-qG-Juu" id="Im0-p6-uU5"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="276" y="31"/>
         </scene>
     </scenes>
 </document>

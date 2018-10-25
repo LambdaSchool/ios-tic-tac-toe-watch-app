@@ -94,6 +94,10 @@ class GameInterfaceController: WKInterfaceController {
         
         do {
             try game.makeMark(at: coordinate)
+            
+            if game.isOver {    // == true
+                GameController.shared.add(game: game)
+            }
         } catch {
             NSLog("Illegal move")
         }
