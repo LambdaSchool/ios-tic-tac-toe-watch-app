@@ -18,9 +18,9 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
     @IBAction func restartGame(_ sender: Any) {
         game.restart()
     }
-    
+
     // MARK: - BoardViewControllerDelegate
-    
+
     func boardViewController(_ boardViewController: BoardViewController, markWasMadeAt coordinate: Coordinate) {
         do {
             try game.makeMark(at: coordinate)
@@ -28,12 +28,12 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
             NSLog("Illegal move")
         }
     }
-    
+
     // MARK: - Private
-    
+
     private func updateViews() {
         guard isViewLoaded else { return }
-        
+
         if let winner = game.winningPlayer?.stringValue {
             statusLabel.text = "Player \(winner) won!"
         } else if let player = game.activePlayer?.stringValue {
@@ -42,7 +42,7 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
             statusLabel.text = "Cat's game!"
         }
     }
-    
+
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -50,7 +50,7 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
             boardViewController = segue.destination as? BoardViewController
         }
     }
- 
+
     private var boardViewController: BoardViewController! {
         didSet {
             boardViewController?.board = game.board
@@ -59,7 +59,7 @@ class GameViewController: UIViewController, BoardViewControllerDelegate {
     }
 
     @IBOutlet weak var statusLabel: UILabel!
-    
+
     private var game = Game() {
         didSet {
             boardViewController.board = game.board
