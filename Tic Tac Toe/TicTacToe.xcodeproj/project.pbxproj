@@ -13,6 +13,11 @@
 		7B9ED38B21B86AEC00F044BC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED38A21B86AEC00F044BC /* ExtensionDelegate.swift */; };
 		7B9ED38D21B86AED00F044BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9ED38C21B86AED00F044BC /* Assets.xcassets */; };
 		7B9ED39121B86AED00F044BC /* TicTacToe-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7B9ED37721B86AEB00F044BC /* TicTacToe-watchOS.app */; };
+		7B9ED39B21B8769E00F044BC /* GameboardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED39A21B8769E00F044BC /* GameboardInterfaceController.swift */; };
+		7B9ED39E21B8773A00F044BC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED39C21B8773900F044BC /* Game.swift */; };
+		7B9ED39F21B8773A00F044BC /* GameAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED39D21B8773900F044BC /* GameAI.swift */; };
+		7B9ED3A121B8789A00F044BC /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED3A021B8789A00F044BC /* GameBoard.swift */; };
+		7B9ED3A521B8914100F044BC /* GameboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED3A421B8914100F044BC /* GameboardButton.swift */; };
 		9DA41C3C2148ABB5001A3F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C3B2148ABB5001A3F45 /* AppDelegate.swift */; };
 		9DA41C412148ABB5001A3F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C3F2148ABB5001A3F45 /* Main.storyboard */; };
 		9DA41C432148ABB5001A3F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C422148ABB5001A3F45 /* Assets.xcassets */; };
@@ -85,6 +90,11 @@
 		7B9ED38A21B86AEC00F044BC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		7B9ED38C21B86AED00F044BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9ED38E21B86AED00F044BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9ED39A21B8769E00F044BC /* GameboardInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardInterfaceController.swift; sourceTree = "<group>"; };
+		7B9ED39C21B8773900F044BC /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7B9ED39D21B8773900F044BC /* GameAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAI.swift; sourceTree = "<group>"; };
+		7B9ED3A021B8789A00F044BC /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		7B9ED3A421B8914100F044BC /* GameboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardButton.swift; sourceTree = "<group>"; };
 		9DA41C382148ABB4001A3F45 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA41C3B2148ABB5001A3F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA41C402148ABB5001A3F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +151,11 @@
 		7B9ED38721B86AEC00F044BC /* TicTacToe-watchOS Extension */ = {
 			isa = PBXGroup;
 			children = (
+				7B9ED3A021B8789A00F044BC /* GameBoard.swift */,
+				7B9ED39C21B8773900F044BC /* Game.swift */,
+				7B9ED39D21B8773900F044BC /* GameAI.swift */,
+				7B9ED39A21B8769E00F044BC /* GameboardInterfaceController.swift */,
+				7B9ED3A421B8914100F044BC /* GameboardButton.swift */,
 				7B9ED38A21B86AEC00F044BC /* ExtensionDelegate.swift */,
 				7B9ED38C21B86AED00F044BC /* Assets.xcassets */,
 				7B9ED38E21B86AED00F044BC /* Info.plist */,
@@ -368,7 +383,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9ED39B21B8769E00F044BC /* GameboardInterfaceController.swift in Sources */,
+				7B9ED39E21B8773A00F044BC /* Game.swift in Sources */,
+				7B9ED3A121B8789A00F044BC /* GameBoard.swift in Sources */,
 				7B9ED38B21B86AEC00F044BC /* ExtensionDelegate.swift in Sources */,
+				7B9ED3A521B8914100F044BC /* GameboardButton.swift in Sources */,
+				7B9ED39F21B8773A00F044BC /* GameAI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
