@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToeWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="QBU-4H-Usv">
+                            <items>
+                                <button width="57" height="16" alignment="right" title="Reset" id="XMg-il-Yfd">
+                                    <connections>
+                                        <action selector="restartGame" destination="AgC-eL-Hgc" id="yX2-yA-uOr"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" id="WEB-0g-P9j"/>
+                            </items>
+                        </group>
+                        <group width="126" height="123" alignment="center" verticalAlignment="center" layout="vertical" id="v1F-Si-NzC">
+                            <items>
+                                <group width="129" alignment="left" spacing="0.0" id="HmW-tJ-5ch">
+                                    <items>
+                                        <button width="42" height="30" alignment="left" id="Dtl-Ga-41V">
+                                            <connections>
+                                                <action selector="buttonOneTapped" destination="AgC-eL-Hgc" id="f8Q-kJ-Y9h"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="30" alignment="left" id="Suc-Nv-BCg">
+                                            <connections>
+                                                <action selector="buttonTwoTapped" destination="AgC-eL-Hgc" id="qEo-qg-6Yc"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="30" alignment="left" id="oTD-AR-rDZ">
+                                            <connections>
+                                                <action selector="buttonThreeTapped" destination="AgC-eL-Hgc" id="Syv-IY-oPg"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="129" alignment="left" spacing="0.0" id="qKB-RO-oJV">
+                                    <items>
+                                        <button width="42" height="30" alignment="left" id="LrZ-HG-VIQ">
+                                            <connections>
+                                                <action selector="buttonFourTapped" destination="AgC-eL-Hgc" id="aY3-aV-kkL"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="30" alignment="left" id="STV-s4-ivi">
+                                            <connections>
+                                                <action selector="buttonFiveTapped" destination="AgC-eL-Hgc" id="TmA-NS-sC0"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="30" alignment="left" id="yRv-eO-cif">
+                                            <connections>
+                                                <action selector="buttonSixTapped" destination="AgC-eL-Hgc" id="CLc-oI-Zu4"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="129" alignment="left" spacing="0.0" id="cZk-M8-xhe">
+                                    <items>
+                                        <button width="42" height="30" alignment="left" id="mcU-kU-dIr">
+                                            <connections>
+                                                <action selector="buttonSevenTapped" destination="AgC-eL-Hgc" id="ha5-sG-YBh"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="30" alignment="left" id="ORX-Vf-7Ae">
+                                            <connections>
+                                                <action selector="buttonEightTapped" destination="AgC-eL-Hgc" id="l7r-7G-vFy"/>
+                                            </connections>
+                                        </button>
+                                        <button width="42" height="30" alignment="left" id="eFB-9K-xuo">
+                                            <connections>
+                                                <action selector="buttonNineTapped" destination="AgC-eL-Hgc" id="8Ze-fH-TOi"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="buttonEight" destination="ORX-Vf-7Ae" id="qj7-0X-62a"/>
+                        <outlet property="buttonFive" destination="STV-s4-ivi" id="07T-Jg-KVx"/>
+                        <outlet property="buttonFour" destination="LrZ-HG-VIQ" id="myI-IP-Ofl"/>
+                        <outlet property="buttonNine" destination="eFB-9K-xuo" id="XxW-Nc-CFs"/>
+                        <outlet property="buttonOne" destination="Dtl-Ga-41V" id="fzy-g3-SgH"/>
+                        <outlet property="buttonSeven" destination="mcU-kU-dIr" id="uvX-KC-bIt"/>
+                        <outlet property="buttonSix" destination="yRv-eO-cif" id="Cn3-ev-NYQ"/>
+                        <outlet property="buttonThree" destination="oTD-AR-rDZ" id="tjd-nZ-fkE"/>
+                        <outlet property="buttonTwo" destination="Suc-Nv-BCg" id="PVL-pa-uBa"/>
+                        <outlet property="statusLabel" destination="WEB-0g-P9j" id="rDm-Sg-ZXO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="35" y="63"/>
+        </scene>
+    </scenes>
+</document>
