@@ -13,52 +13,105 @@ class GameboardInterfaceController: WKInterfaceController {
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        setUpButtons()
+
         updateViews()
     }
     
     @IBAction func reset() {
         game.restart()
+        button00.setTitle("")
+        button01.setTitle("")
+        button02.setTitle("")
+        button10.setTitle("")
+        button11.setTitle("")
+        button12.setTitle("")
+        button20.setTitle("")
+        button21.setTitle("")
+        button22.setTitle("")
     }
     
-    @IBAction func mark(_ sender: GameboardButton) {
+    @IBAction func pressButton00() {
         do {
-            try game.makeMark(at: sender.coordinates!)
+            button00.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (0, 0))
         } catch {
             NSLog("Illegal move")
         }
     }
     
-    // MARK: - Private
+    @IBAction func pressButton01() {
+        do {
+            button01.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (0, 1))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
     
-    private func setUpButtons() {
-        button00.coordinates = (0,0)
-        button01.coordinates = (0,1)
-        button02.coordinates = (0,2)
-        button10.coordinates = (1,0)
-        button11.coordinates = (1,1)
-        button12.coordinates = (1,2)
-        button20.coordinates = (2,0)
-        button21.coordinates = (2,1)
-        button22.coordinates = (2,2)
-        
-        buttons = [button00, button01, button02, button10, button11, button12, button20, button21, button22]
+    @IBAction func pressButton02() {
+        do {
+            button02.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (0, 2))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
+    
+    @IBAction func pressButton10() {
+        do {
+            button10.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (1, 0))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
+    
+    @IBAction func pressButton11() {
+        do {
+            button11.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (1, 1))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
+    
+    @IBAction func pressButton12() {
+        do {
+            button12.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (1, 2))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
+    
+    @IBAction func pressButton20() {
+        do {
+            button20.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (2, 0))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
+    
+    @IBAction func pressButton21() {
+        do {
+            button21.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (2, 1))
+        } catch {
+            NSLog("Illegal move")
+        }
+    }
+    
+    @IBAction func pressButton22() {
+        do {
+            button22.setTitle(game.activePlayer?.stringValue)
+            try game.makeMark(at: (2, 2))
+        } catch {
+            NSLog("Illegal move")
+        }
     }
     
     private func updateViews() {
-        guard let board = board else { return }
-        
-        for x in 0..<3 {
-            for y in 0..<3 {
-                let coord = (x, y)
-                let button = self.button(for: coord)
-                if let mark = board[coord] {
-                    button.setTitle(mark.stringValue)
-                } else {
-                    button.setTitle(" ")
-                }
-            }
-        }
         
         if let winner = game.winningPlayer?.stringValue {
             statusLabel.setText("Player \(winner) won!")
@@ -69,38 +122,22 @@ class GameboardInterfaceController: WKInterfaceController {
         }
     }
     
-    private func button(for coordinate: Coordinate) -> WKInterfaceButton {
-        let button = buttons.filter{ $0.coordinates! == coordinate }.first
-        return button!
-    }
-    
-    // MARK: - Properties
-    
-    var board: GameBoard? {
-        didSet {
-            updateViews()
-        }
-    }
-    
     private var game = Game() {
         didSet {
-            board = game.board
             updateViews()
         }
     }
-    
-    var buttons = [GameboardButton]()
-    
+
     @IBOutlet weak var statusLabel: WKInterfaceLabel!
     
-    @IBOutlet weak var button00: GameboardButton!
-    @IBOutlet weak var button01: GameboardButton!
-    @IBOutlet weak var button02: GameboardButton!
-    @IBOutlet weak var button10: GameboardButton!
-    @IBOutlet weak var button11: GameboardButton!
-    @IBOutlet weak var button12: GameboardButton!
-    @IBOutlet weak var button20: GameboardButton!
-    @IBOutlet weak var button21: GameboardButton!
-    @IBOutlet weak var button22: GameboardButton!
+    @IBOutlet weak var button00: WKInterfaceButton!
+    @IBOutlet weak var button01: WKInterfaceButton!
+    @IBOutlet weak var button02: WKInterfaceButton!
+    @IBOutlet weak var button10: WKInterfaceButton!
+    @IBOutlet weak var button11: WKInterfaceButton!
+    @IBOutlet weak var button12: WKInterfaceButton!
+    @IBOutlet weak var button20: WKInterfaceButton!
+    @IBOutlet weak var button21: WKInterfaceButton!
+    @IBOutlet weak var button22: WKInterfaceButton!
     
 }

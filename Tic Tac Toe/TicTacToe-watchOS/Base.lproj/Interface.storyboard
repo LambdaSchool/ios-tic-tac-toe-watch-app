@@ -9,14 +9,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Gameboard Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_watchOS" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="GameboardInterfaceController" customModule="TicTacToe_watchOS_Extension">
                     <items>
-                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" id="MF5-dA-LeI">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="5" id="MF5-dA-LeI">
                             <items>
-                                <group width="1" alignment="center" id="loM-h0-sgt">
+                                <group width="1" height="0.14999999999999999" alignment="center" id="loM-h0-sgt">
                                     <items>
                                         <label width="0.5" height="20" alignment="left" text="Play!" minimumScaleFactor="0.80000000000000004" id="6z9-fz-wT9">
                                             <fontDescription key="font" style="UICTFontTextStyleBody"/>
@@ -28,25 +28,61 @@
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="IHQ-jR-bGA">
+                                <group width="1" alignment="center" id="IHQ-jR-bGA">
                                     <items>
-                                        <button width="44" alignment="left" id="w30-uY-nYX" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
-                                        <button width="0.33333333332999998" alignment="center" id="XJx-UR-pgY" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
-                                        <button width="0.33333333332999998" alignment="right" id="WtL-Bf-Jye" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
+                                        <button width="0.33333333332999998" alignment="left" id="w30-uY-nYX">
+                                            <connections>
+                                                <action selector="pressButton00" destination="AgC-eL-Hgc" id="7go-nS-uFx"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="center" id="XJx-UR-pgY">
+                                            <connections>
+                                                <action selector="pressButton01" destination="AgC-eL-Hgc" id="BMo-2A-kk6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="right" id="WtL-Bf-Jye">
+                                            <connections>
+                                                <action selector="pressButton02" destination="AgC-eL-Hgc" id="yC3-zW-uuJ"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="QyM-OG-Tmv">
+                                <group width="1" alignment="center" id="QyM-OG-Tmv">
                                     <items>
-                                        <button width="0.33333333332999998" alignment="left" id="hzP-ZP-bA9" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
-                                        <button width="0.33333333332999998" alignment="center" id="P8V-hq-IsQ" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
-                                        <button width="0.33333333332999998" alignment="right" id="sZf-ZY-jdU" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
+                                        <button width="0.33333333332999998" alignment="left" id="hzP-ZP-bA9">
+                                            <connections>
+                                                <action selector="pressButton10" destination="AgC-eL-Hgc" id="3dN-LL-rez"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="center" id="P8V-hq-IsQ">
+                                            <connections>
+                                                <action selector="pressButton11" destination="AgC-eL-Hgc" id="8BE-0E-Ikw"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="right" id="sZf-ZY-jdU">
+                                            <connections>
+                                                <action selector="pressButton12" destination="AgC-eL-Hgc" id="5HV-IS-UxC"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="orZ-IH-imM">
+                                <group width="1" alignment="center" id="orZ-IH-imM">
                                     <items>
-                                        <button width="0.33333333332999998" alignment="left" id="3lu-fE-ZUT" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
-                                        <button width="0.33333333332999998" alignment="center" id="iG6-5d-rfn" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
-                                        <button width="0.33333333332999998" alignment="right" id="xIL-rl-4Ke" customClass="GameboardButton" customModule="TicTacToe_watchOS_Extension"/>
+                                        <button width="0.33333333332999998" alignment="left" id="3lu-fE-ZUT">
+                                            <connections>
+                                                <action selector="pressButton20" destination="AgC-eL-Hgc" id="jLd-HT-oiO"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="center" id="iG6-5d-rfn">
+                                            <connections>
+                                                <action selector="pressButton21" destination="AgC-eL-Hgc" id="qUE-Eq-hER"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="right" id="xIL-rl-4Ke">
+                                            <connections>
+                                                <action selector="pressButton22" destination="AgC-eL-Hgc" id="bGw-Yj-S1o"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
