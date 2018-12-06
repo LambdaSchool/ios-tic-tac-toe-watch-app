@@ -42,7 +42,6 @@ struct Game {
             let newPlayer = player == .x ? GameBoard.Mark.o : GameBoard.Mark.x
             gameState = .active(newPlayer)
         }
-        print(gameState)
     }
     
     private(set) var board = GameBoard()

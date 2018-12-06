@@ -19,7 +19,8 @@
                                 <group width="1" alignment="center" verticalAlignment="center" id="Ve9-tI-19Y">
                                     <items>
                                         <button width="50" height="24" alignment="right" title="Reset" id="TE7-VA-LWG">
-                                            <fontDescription key="font" type="system" pointSize="10"/>
+                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
                                             <connections>
                                                 <action selector="resetButton" destination="AgC-eL-Hgc" id="8nu-53-xeW"/>
                                             </connections>

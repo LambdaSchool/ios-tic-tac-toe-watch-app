@@ -132,10 +132,12 @@ class InterfaceController: WKInterfaceController {
         
         if let winner = game.winningPlayer?.stringValue {
             statusLabel.setText("Player \(winner) won!")
+            statusLabel.setTextColor(.yellow)
         } else if let player = game.activePlayer?.stringValue {
             statusLabel.setText("Player \(player)'s turn")
         } else if game.isOver {
             statusLabel.setText("Cat's game!")
+            statusLabel.setTextColor(.green)
         }
         
         switch mark {
