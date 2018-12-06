@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B9ED37B21B86AEB00F044BC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9ED37921B86AEB00F044BC /* Interface.storyboard */; };
+		7B9ED37D21B86AEC00F044BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9ED37C21B86AEC00F044BC /* Assets.xcassets */; };
+		7B9ED38421B86AEC00F044BC /* TicTacToe-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7B9ED38321B86AEC00F044BC /* TicTacToe-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7B9ED38B21B86AEC00F044BC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED38A21B86AEC00F044BC /* ExtensionDelegate.swift */; };
+		7B9ED38D21B86AED00F044BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9ED38C21B86AED00F044BC /* Assets.xcassets */; };
+		7B9ED39121B86AED00F044BC /* TicTacToe-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 7B9ED37721B86AEB00F044BC /* TicTacToe-watchOS.app */; };
+		7B9ED39B21B8769E00F044BC /* GameboardInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED39A21B8769E00F044BC /* GameboardInterfaceController.swift */; };
+		7B9ED39E21B8773A00F044BC /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED39C21B8773900F044BC /* Game.swift */; };
+		7B9ED39F21B8773A00F044BC /* GameAI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED39D21B8773900F044BC /* GameAI.swift */; };
+		7B9ED3A121B8789A00F044BC /* GameBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED3A021B8789A00F044BC /* GameBoard.swift */; };
+		7B9ED3A521B8914100F044BC /* GameboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9ED3A421B8914100F044BC /* GameboardButton.swift */; };
 		9DA41C3C2148ABB5001A3F45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA41C3B2148ABB5001A3F45 /* AppDelegate.swift */; };
 		9DA41C412148ABB5001A3F45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C3F2148ABB5001A3F45 /* Main.storyboard */; };
 		9DA41C432148ABB5001A3F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA41C422148ABB5001A3F45 /* Assets.xcassets */; };
@@ -22,6 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7B9ED38521B86AEC00F044BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA41C302148ABB4001A3F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9ED38221B86AEC00F044BC;
+			remoteInfo = "TicTacToe-watchOS Extension";
+		};
+		7B9ED38F21B86AED00F044BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DA41C302148ABB4001A3F45 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7B9ED37621B86AEB00F044BC;
+			remoteInfo = "TicTacToe-watchOS";
+		};
 		9DA41C572148ABEE001A3F45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9DA41C302148ABB4001A3F45 /* Project object */;
@@ -31,7 +56,45 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7B9ED39521B86AED00F044BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7B9ED38421B86AEC00F044BC /* TicTacToe-watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9ED39921B86AED00F044BC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				7B9ED39121B86AED00F044BC /* TicTacToe-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7B9ED37721B86AEB00F044BC /* TicTacToe-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TicTacToe-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9ED37A21B86AEB00F044BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		7B9ED37C21B86AEC00F044BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B9ED37E21B86AEC00F044BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9ED38321B86AEC00F044BC /* TicTacToe-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TicTacToe-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B9ED38A21B86AEC00F044BC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		7B9ED38C21B86AED00F044BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7B9ED38E21B86AED00F044BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B9ED39A21B8769E00F044BC /* GameboardInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardInterfaceController.swift; sourceTree = "<group>"; };
+		7B9ED39C21B8773900F044BC /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7B9ED39D21B8773900F044BC /* GameAI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameAI.swift; sourceTree = "<group>"; };
+		7B9ED3A021B8789A00F044BC /* GameBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoard.swift; sourceTree = "<group>"; };
+		7B9ED3A421B8914100F044BC /* GameboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameboardButton.swift; sourceTree = "<group>"; };
 		9DA41C382148ABB4001A3F45 /* TicTacToe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA41C3B2148ABB5001A3F45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA41C402148ABB5001A3F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +114,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7B9ED38021B86AEC00F044BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DA41C352148ABB4001A3F45 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,11 +138,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B9ED37821B86AEB00F044BC /* TicTacToe-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				7B9ED37921B86AEB00F044BC /* Interface.storyboard */,
+				7B9ED37C21B86AEC00F044BC /* Assets.xcassets */,
+				7B9ED37E21B86AEC00F044BC /* Info.plist */,
+			);
+			path = "TicTacToe-watchOS";
+			sourceTree = "<group>";
+		};
+		7B9ED38721B86AEC00F044BC /* TicTacToe-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7B9ED3A021B8789A00F044BC /* GameBoard.swift */,
+				7B9ED39C21B8773900F044BC /* Game.swift */,
+				7B9ED39D21B8773900F044BC /* GameAI.swift */,
+				7B9ED39A21B8769E00F044BC /* GameboardInterfaceController.swift */,
+				7B9ED3A421B8914100F044BC /* GameboardButton.swift */,
+				7B9ED38A21B86AEC00F044BC /* ExtensionDelegate.swift */,
+				7B9ED38C21B86AED00F044BC /* Assets.xcassets */,
+				7B9ED38E21B86AED00F044BC /* Info.plist */,
+			);
+			path = "TicTacToe-watchOS Extension";
+			sourceTree = "<group>";
+		};
 		9DA41C2F2148ABB4001A3F45 = {
 			isa = PBXGroup;
 			children = (
 				9DA41C3A2148ABB4001A3F45 /* TicTacToe */,
 				9DA41C532148ABED001A3F45 /* TicTacToeTests */,
+				7B9ED37821B86AEB00F044BC /* TicTacToe-watchOS */,
+				7B9ED38721B86AEC00F044BC /* TicTacToe-watchOS Extension */,
 				9DA41C392148ABB4001A3F45 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,6 +179,8 @@
 			children = (
 				9DA41C382148ABB4001A3F45 /* TicTacToe.app */,
 				9DA41C522148ABED001A3F45 /* TicTacToeTests.xctest */,
+				7B9ED37721B86AEB00F044BC /* TicTacToe-watchOS.app */,
+				7B9ED38321B86AEC00F044BC /* TicTacToe-watchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +224,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7B9ED37621B86AEB00F044BC /* TicTacToe-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9ED39621B86AED00F044BC /* Build configuration list for PBXNativeTarget "TicTacToe-watchOS" */;
+			buildPhases = (
+				7B9ED37521B86AEB00F044BC /* Resources */,
+				7B9ED39521B86AED00F044BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7B9ED38621B86AEC00F044BC /* PBXTargetDependency */,
+			);
+			name = "TicTacToe-watchOS";
+			productName = "TicTacToe-watchOS";
+			productReference = 7B9ED37721B86AEB00F044BC /* TicTacToe-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		7B9ED38221B86AEC00F044BC /* TicTacToe-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B9ED39221B86AED00F044BC /* Build configuration list for PBXNativeTarget "TicTacToe-watchOS Extension" */;
+			buildPhases = (
+				7B9ED37F21B86AEC00F044BC /* Sources */,
+				7B9ED38021B86AEC00F044BC /* Frameworks */,
+				7B9ED38121B86AEC00F044BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TicTacToe-watchOS Extension";
+			productName = "TicTacToe-watchOS Extension";
+			productReference = 7B9ED38321B86AEC00F044BC /* TicTacToe-watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		9DA41C372148ABB4001A3F45 /* TicTacToe */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9DA41C4A2148ABB5001A3F45 /* Build configuration list for PBXNativeTarget "TicTacToe" */;
@@ -132,10 +265,12 @@
 				9DA41C342148ABB4001A3F45 /* Sources */,
 				9DA41C352148ABB4001A3F45 /* Frameworks */,
 				9DA41C362148ABB4001A3F45 /* Resources */,
+				7B9ED39921B86AED00F044BC /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7B9ED39021B86AED00F044BC /* PBXTargetDependency */,
 			);
 			name = TicTacToe;
 			productName = TicTacToe;
@@ -166,10 +301,16 @@
 		9DA41C302148ABB4001A3F45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0940;
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Lambda School";
 				TargetAttributes = {
+					7B9ED37621B86AEB00F044BC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					7B9ED38221B86AEC00F044BC = {
+						CreatedOnToolsVersion = 10.1;
+					};
 					9DA41C372148ABB4001A3F45 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
@@ -194,11 +335,30 @@
 			targets = (
 				9DA41C372148ABB4001A3F45 /* TicTacToe */,
 				9DA41C512148ABED001A3F45 /* TicTacToeTests */,
+				7B9ED37621B86AEB00F044BC /* TicTacToe-watchOS */,
+				7B9ED38221B86AEC00F044BC /* TicTacToe-watchOS Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7B9ED37521B86AEB00F044BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9ED37D21B86AEC00F044BC /* Assets.xcassets in Resources */,
+				7B9ED37B21B86AEB00F044BC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B9ED38121B86AEC00F044BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9ED38D21B86AED00F044BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DA41C362148ABB4001A3F45 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +379,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B9ED37F21B86AEC00F044BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B9ED39B21B8769E00F044BC /* GameboardInterfaceController.swift in Sources */,
+				7B9ED39E21B8773A00F044BC /* Game.swift in Sources */,
+				7B9ED3A121B8789A00F044BC /* GameBoard.swift in Sources */,
+				7B9ED38B21B86AEC00F044BC /* ExtensionDelegate.swift in Sources */,
+				7B9ED3A521B8914100F044BC /* GameboardButton.swift in Sources */,
+				7B9ED39F21B8773A00F044BC /* GameAI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DA41C342148ABB4001A3F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -245,6 +418,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7B9ED38621B86AEC00F044BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9ED38221B86AEC00F044BC /* TicTacToe-watchOS Extension */;
+			targetProxy = 7B9ED38521B86AEC00F044BC /* PBXContainerItemProxy */;
+		};
+		7B9ED39021B86AED00F044BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7B9ED37621B86AEB00F044BC /* TicTacToe-watchOS */;
+			targetProxy = 7B9ED38F21B86AED00F044BC /* PBXContainerItemProxy */;
+		};
 		9DA41C582148ABEE001A3F45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9DA41C372148ABB4001A3F45 /* TicTacToe */;
@@ -253,6 +436,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		7B9ED37921B86AEB00F044BC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7B9ED37A21B86AEB00F044BC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		9DA41C3F2148ABB5001A3F45 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,6 +463,94 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7B9ED39321B86AED00F044BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
+				INFOPLIST_FILE = "TicTacToe-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		7B9ED39421B86AED00F044BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
+				INFOPLIST_FILE = "TicTacToe-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		7B9ED39721B86AED00F044BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
+				IBSC_MODULE = TicTacToe_watchOS_Extension;
+				INFOPLIST_FILE = "TicTacToe-watchOS/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		7B9ED39821B86AED00F044BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
+				IBSC_MODULE = TicTacToe_watchOS_Extension;
+				INFOPLIST_FILE = "TicTacToe-watchOS/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lambdaschool.TicTacToe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
 		9DA41C482148ABB5001A3F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -391,7 +670,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
 				INFOPLIST_FILE = "$(SRCROOT)/TicTacToe/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +688,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
 				INFOPLIST_FILE = "$(SRCROOT)/TicTacToe/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -427,7 +706,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
 				INFOPLIST_FILE = TicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,7 +726,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VXUQXR6S56;
+				DEVELOPMENT_TEAM = 8DKFDJ8NNY;
 				INFOPLIST_FILE = TicTacToeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -465,6 +744,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7B9ED39221B86AED00F044BC /* Build configuration list for PBXNativeTarget "TicTacToe-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9ED39321B86AED00F044BC /* Debug */,
+				7B9ED39421B86AED00F044BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B9ED39621B86AED00F044BC /* Build configuration list for PBXNativeTarget "TicTacToe-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B9ED39721B86AED00F044BC /* Debug */,
+				7B9ED39821B86AED00F044BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9DA41C332148ABB4001A3F45 /* Build configuration list for PBXProject "TicTacToe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

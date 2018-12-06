@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Gameboard Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="GameboardInterfaceController" customModule="TicTacToe_watchOS_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="5" id="MF5-dA-LeI">
+                            <items>
+                                <group width="1" height="0.14999999999999999" alignment="center" id="loM-h0-sgt">
+                                    <items>
+                                        <label width="0.5" height="20" alignment="left" text="Play!" minimumScaleFactor="0.80000000000000004" id="6z9-fz-wT9">
+                                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                        </label>
+                                        <button width="0.5" height="1" alignment="right" title="Reset" id="mcY-sE-AUF">
+                                            <connections>
+                                                <action selector="reset" destination="AgC-eL-Hgc" id="aKi-Tw-PtC"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="IHQ-jR-bGA">
+                                    <items>
+                                        <button width="0.33333333332999998" alignment="left" id="w30-uY-nYX">
+                                            <connections>
+                                                <action selector="pressButton00" destination="AgC-eL-Hgc" id="7go-nS-uFx"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="center" id="XJx-UR-pgY">
+                                            <connections>
+                                                <action selector="pressButton01" destination="AgC-eL-Hgc" id="BMo-2A-kk6"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="right" id="WtL-Bf-Jye">
+                                            <connections>
+                                                <action selector="pressButton02" destination="AgC-eL-Hgc" id="yC3-zW-uuJ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="QyM-OG-Tmv">
+                                    <items>
+                                        <button width="0.33333333332999998" alignment="left" id="hzP-ZP-bA9">
+                                            <connections>
+                                                <action selector="pressButton10" destination="AgC-eL-Hgc" id="3dN-LL-rez"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="center" id="P8V-hq-IsQ">
+                                            <connections>
+                                                <action selector="pressButton11" destination="AgC-eL-Hgc" id="8BE-0E-Ikw"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="right" id="sZf-ZY-jdU">
+                                            <connections>
+                                                <action selector="pressButton12" destination="AgC-eL-Hgc" id="5HV-IS-UxC"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="center" id="orZ-IH-imM">
+                                    <items>
+                                        <button width="0.33333333332999998" alignment="left" id="3lu-fE-ZUT">
+                                            <connections>
+                                                <action selector="pressButton20" destination="AgC-eL-Hgc" id="jLd-HT-oiO"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="center" id="iG6-5d-rfn">
+                                            <connections>
+                                                <action selector="pressButton21" destination="AgC-eL-Hgc" id="qUE-Eq-hER"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.33333333332999998" alignment="right" id="xIL-rl-4Ke">
+                                            <connections>
+                                                <action selector="pressButton22" destination="AgC-eL-Hgc" id="bGw-Yj-S1o"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="button00" destination="w30-uY-nYX" id="Gih-Jk-GMk"/>
+                        <outlet property="button01" destination="XJx-UR-pgY" id="yxf-bK-vhC"/>
+                        <outlet property="button02" destination="WtL-Bf-Jye" id="aPq-WU-EMN"/>
+                        <outlet property="button10" destination="hzP-ZP-bA9" id="cNG-qS-TX9"/>
+                        <outlet property="button11" destination="P8V-hq-IsQ" id="u4V-zh-Duc"/>
+                        <outlet property="button12" destination="sZf-ZY-jdU" id="uoQ-FJ-36O"/>
+                        <outlet property="button20" destination="3lu-fE-ZUT" id="SWB-Sl-qmy"/>
+                        <outlet property="button21" destination="iG6-5d-rfn" id="Zr4-Ot-L6C"/>
+                        <outlet property="button22" destination="xIL-rl-4Ke" id="zhp-gQ-RAL"/>
+                        <outlet property="statusLabel" destination="6z9-fz-wT9" id="C88-IH-gKh"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
