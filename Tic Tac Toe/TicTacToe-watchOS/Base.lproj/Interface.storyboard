@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller fullBounds="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_watchOS" customModuleProvider="target">
+                    <items>
+                        <group alignment="center" verticalAlignment="center" layout="vertical" id="18e-DC-emL">
+                            <items>
+                                <group width="1" alignment="center" verticalAlignment="center" id="Ve9-tI-19Y">
+                                    <items>
+                                        <button width="50" height="24" alignment="right" title="Reset" id="TE7-VA-LWG">
+                                            <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="14"/>
+                                            <connections>
+                                                <action selector="resetButton" destination="AgC-eL-Hgc" id="8nu-53-xeW"/>
+                                            </connections>
+                                        </button>
+                                        <label alignment="left" verticalAlignment="center" text="Player X's Turn" id="Z0D-4Q-lt7">
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group alignment="center" verticalAlignment="center" id="ZT8-3A-oze">
+                                    <items>
+                                        <button width="50" height="50" alignment="left" title="X" id="DFX-jf-BhO">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square1Button" destination="AgC-eL-Hgc" id="wsd-Gx-Sh7"/>
+                                            </connections>
+                                        </button>
+                                        <button width="50" height="50" alignment="left" title="O" id="Wvo-c5-4V6">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square2Button" destination="AgC-eL-Hgc" id="Eoy-BL-GZ1"/>
+                                            </connections>
+                                        </button>
+                                        <button width="50" height="50" alignment="left" title="X" id="vOc-Ib-oas">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square3Button" destination="AgC-eL-Hgc" id="6sR-IT-ArQ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group alignment="center" verticalAlignment="center" id="7VI-Nw-xIM">
+                                    <items>
+                                        <button width="50" height="50" alignment="left" title="O" id="SRo-vS-4al">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square4Button" destination="AgC-eL-Hgc" id="gDW-rw-fR8"/>
+                                            </connections>
+                                        </button>
+                                        <button width="50" height="50" alignment="left" title="X" id="AdG-Vd-4ZB">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square5Button" destination="AgC-eL-Hgc" id="RsV-Q6-2uO"/>
+                                            </connections>
+                                        </button>
+                                        <button width="50" height="50" alignment="left" title="O" id="U7c-mW-KXs">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square6Button" destination="AgC-eL-Hgc" id="Luv-ZS-7yW"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group alignment="center" verticalAlignment="center" id="uQM-Gx-MUC">
+                                    <items>
+                                        <button width="50" height="50" alignment="left" title="O" id="PGC-wz-jRN">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square7Button" destination="AgC-eL-Hgc" id="vpY-PQ-9ZE"/>
+                                            </connections>
+                                        </button>
+                                        <button width="50" height="50" alignment="left" title="X" id="fcb-xE-VNm">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square8Button" destination="AgC-eL-Hgc" id="Jpa-uD-rFO"/>
+                                            </connections>
+                                        </button>
+                                        <button width="50" height="50" alignment="left" title="O" id="qOz-ci-Dpb">
+                                            <fontDescription key="font" style="UICTFontTextStyleTitle0"/>
+                                            <connections>
+                                                <action selector="square9Button" destination="AgC-eL-Hgc" id="T1m-oI-Gh6"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="square1Label" destination="DFX-jf-BhO" id="9p0-i3-e8H"/>
+                        <outlet property="square2Label" destination="Wvo-c5-4V6" id="eWT-Md-JQH"/>
+                        <outlet property="square3Label" destination="vOc-Ib-oas" id="BmT-tS-jPS"/>
+                        <outlet property="square4Label" destination="SRo-vS-4al" id="zV4-2P-T0V"/>
+                        <outlet property="square5Label" destination="AdG-Vd-4ZB" id="Mqh-jN-DrO"/>
+                        <outlet property="square6Label" destination="U7c-mW-KXs" id="jdD-c4-feh"/>
+                        <outlet property="square7Label" destination="PGC-wz-jRN" id="z28-uO-LZz"/>
+                        <outlet property="square8Label" destination="fcb-xE-VNm" id="a8v-zq-cPf"/>
+                        <outlet property="square9Label" destination="qOz-ci-Dpb" id="mTM-dv-ARr"/>
+                        <outlet property="statusLabel" destination="Z0D-4Q-lt7" id="tvq-mJ-WgF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="30.357142857142858"/>
+        </scene>
+    </scenes>
+</document>
