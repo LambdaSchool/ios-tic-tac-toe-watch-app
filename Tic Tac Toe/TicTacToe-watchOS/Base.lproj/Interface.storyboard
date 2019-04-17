@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_watchOS" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="1" heightAdjustment="12" alignment="center" verticalAlignment="center" layout="vertical" id="d08-75-jzz">
+                            <items>
+                                <group width="1" alignment="left" id="v6b-pr-4P0">
+                                    <items>
+                                        <label alignment="left" verticalAlignment="center" text="Label" id="QBk-Lc-wgH"/>
+                                        <button alignment="right" verticalAlignment="center" title="Reset" id="7kP-Gk-dej"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="aQb-zj-aEZ">
+                                    <items>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="pBs-fJ-Rxc"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Axc-2g-V5c"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="mNG-ID-ZEb"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="HgO-OR-gki">
+                                    <items>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="4E5-F7-CgH"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="scC-0U-SIv"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="BFs-P7-c3Z"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="OOD-kn-W2B">
+                                    <items>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="tG5-NF-K2M"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="8AF-AT-mdy"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Vgq-08-9NF"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
