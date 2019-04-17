@@ -9,10 +9,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14490.21"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--Game Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="TicTacToe_watchOS" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" customClass="GameInterfaceController" customModule="TicTacToe_watchOS_Extension">
                     <items>
                         <group width="1" height="1" heightAdjustment="12" alignment="center" verticalAlignment="center" layout="vertical" id="d08-75-jzz">
                             <items>
@@ -24,28 +24,75 @@
                                 </group>
                                 <group width="1" alignment="left" id="aQb-zj-aEZ">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="pBs-fJ-Rxc"/>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Axc-2g-V5c"/>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="mNG-ID-ZEb"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="pBs-fJ-Rxc">
+                                            <connections>
+                                                <action selector="boardSpaceOneTapped" destination="AgC-eL-Hgc" id="sU0-o9-EUa"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Axc-2g-V5c">
+                                            <connections>
+                                                <action selector="boardSpaceTwoTapped" destination="AgC-eL-Hgc" id="xrh-sl-NDt"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="mNG-ID-ZEb">
+                                            <connections>
+                                                <action selector="boardSpaceThreeTapped" destination="AgC-eL-Hgc" id="7bl-av-Wzt"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="HgO-OR-gki">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="4E5-F7-CgH"/>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="scC-0U-SIv"/>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="BFs-P7-c3Z"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="4E5-F7-CgH">
+                                            <connections>
+                                                <action selector="boardSpaceFourTapped" destination="AgC-eL-Hgc" id="at4-Nh-EXi"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="scC-0U-SIv">
+                                            <connections>
+                                                <action selector="boardSpaceFiveTapped" destination="AgC-eL-Hgc" id="R9U-gI-BMe"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="BFs-P7-c3Z">
+                                            <connections>
+                                                <action selector="boardSpaceSixTapped" destination="AgC-eL-Hgc" id="ydS-1A-ysg"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="OOD-kn-W2B">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="tG5-NF-K2M"/>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="8AF-AT-mdy"/>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Vgq-08-9NF"/>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="tG5-NF-K2M">
+                                            <connections>
+                                                <action selector="boardSpaceSevenTapped" destination="AgC-eL-Hgc" id="Un5-ma-7aY"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="8AF-AT-mdy">
+                                            <connections>
+                                                <action selector="boardSpaceEightTapped" destination="AgC-eL-Hgc" id="u2I-Jf-XXU"/>
+                                            </connections>
+                                        </button>
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Vgq-08-9NF">
+                                            <connections>
+                                                <action selector="boardSpaceNineTapped" destination="AgC-eL-Hgc" id="fvj-DW-65n"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="boardSpaceEightButton" destination="8AF-AT-mdy" id="Xt7-3I-2zo"/>
+                        <outlet property="boardSpaceFiveButton" destination="scC-0U-SIv" id="MwC-DC-fz3"/>
+                        <outlet property="boardSpaceFourButton" destination="4E5-F7-CgH" id="aYa-oH-Ilf"/>
+                        <outlet property="boardSpaceNineButton" destination="Vgq-08-9NF" id="rOe-ND-EIp"/>
+                        <outlet property="boardSpaceOneButton" destination="pBs-fJ-Rxc" id="bO4-tb-HwX"/>
+                        <outlet property="boardSpaceSevenButton" destination="tG5-NF-K2M" id="D4O-zs-gUs"/>
+                        <outlet property="boardSpaceSixButton" destination="BFs-P7-c3Z" id="MME-Ym-v2U"/>
+                        <outlet property="boardSpaceThreeButton" destination="mNG-ID-ZEb" id="BjW-kb-grY"/>
+                        <outlet property="boardSpaceTwoButton" destination="Axc-2g-V5c" id="VbB-QU-OXK"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>

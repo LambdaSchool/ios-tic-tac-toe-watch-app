@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import TicTacToeCore
 
 enum GameError: Error {
     case gameOver

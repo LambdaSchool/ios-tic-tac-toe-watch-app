@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TicTacToeCore
 
 class GameViewController: UIViewController, BoardViewControllerDelegate {
 

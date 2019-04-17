@@ -12,15 +12,17 @@ enum GameBoardError: Error, Equatable {
     case invalidSquare
 }
 
-typealias Coordinate = (x: Int, y: Int)
+public typealias Coordinate = (x: Int, y: Int)
 
-struct GameBoard {
+public struct GameBoard {
     
-    enum Mark: Equatable {
+    public init() {}
+    
+    public enum Mark: Equatable {
         case x
         case o
         
-        var stringValue: String {
+        public var stringValue: String {
             switch self {
             case .x: return "X"
             case .o: return "O"
@@ -33,7 +35,7 @@ struct GameBoard {
         case empty
     }
     
-    subscript(coordinate: Coordinate) -> Mark? {
+    public subscript(coordinate: Coordinate) -> Mark? {
         let square = squares[arrayIndex(for: coordinate)]
         if case let Square.filled(mark) = square {
             return mark
@@ -42,14 +44,14 @@ struct GameBoard {
         }
     }
     
-    mutating func place(mark: Mark, on square: Coordinate) throws {
+    mutating public func place(mark: Mark, on square: Coordinate) throws {
         if self[square] != nil {
             throw GameBoardError.invalidSquare
         }
         squares[arrayIndex(for: square)] = .filled(mark)
     }
     
-    var isFull: Bool {
+    public var isFull: Bool {
         for square in squares {
             if square == .empty {
                 return false

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import TicTacToeCore
 
 protocol BoardViewControllerDelegate: class {
     func boardViewController(_ boardViewController: BoardViewController, markWasMadeAt coordinate: Coordinate)
