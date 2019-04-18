@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import TicTacToeCore
 
 func game(board: GameBoard, isWonBy player: GameBoard.Mark) -> Bool {
     // Check verticals
