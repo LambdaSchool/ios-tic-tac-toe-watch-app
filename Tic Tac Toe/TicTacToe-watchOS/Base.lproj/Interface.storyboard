@@ -14,69 +14,72 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="GameInterfaceController" customModule="TicTacToe_watchOS_Extension">
                     <items>
-                        <group width="1" height="1" heightAdjustment="12" alignment="center" verticalAlignment="center" layout="vertical" id="d08-75-jzz">
+                        <group width="1" height="1" alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" layout="vertical" id="d08-75-jzz">
                             <items>
-                                <group width="1" alignment="left" id="v6b-pr-4P0">
+                                <group width="0.90000000000000002" height="0.20000000000000001" alignment="center" id="v6b-pr-4P0">
                                     <items>
-                                        <label alignment="left" verticalAlignment="center" id="QBk-Lc-wgH"/>
-                                        <button alignment="right" verticalAlignment="center" title="Reset" id="7kP-Gk-dej">
+                                        <label height="1" alignment="left" verticalAlignment="center" id="QBk-Lc-wgH">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                        </label>
+                                        <button height="1" alignment="right" verticalAlignment="center" title="Reset" id="7kP-Gk-dej">
+                                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                             <connections>
                                                 <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="psa-6x-eIa"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="aQb-zj-aEZ">
+                                <group width="0.90000000000000002" height="0.20000000000000001" alignment="center" id="aQb-zj-aEZ">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="pBs-fJ-Rxc">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="pBs-fJ-Rxc">
                                             <connections>
                                                 <action selector="boardSpaceOneTapped" destination="AgC-eL-Hgc" id="sU0-o9-EUa"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="Axc-2g-V5c">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="Axc-2g-V5c">
                                             <connections>
                                                 <action selector="boardSpaceTwoTapped" destination="AgC-eL-Hgc" id="xrh-sl-NDt"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="mNG-ID-ZEb">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="mNG-ID-ZEb">
                                             <connections>
                                                 <action selector="boardSpaceThreeTapped" destination="AgC-eL-Hgc" id="7bl-av-Wzt"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="HgO-OR-gki">
+                                <group width="0.90000000000000002" height="0.20000000000000001" alignment="center" id="HgO-OR-gki">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="4E5-F7-CgH">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="4E5-F7-CgH">
                                             <connections>
                                                 <action selector="boardSpaceFourTapped" destination="AgC-eL-Hgc" id="at4-Nh-EXi"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="scC-0U-SIv">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="scC-0U-SIv">
                                             <connections>
                                                 <action selector="boardSpaceFiveTapped" destination="AgC-eL-Hgc" id="R9U-gI-BMe"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="BFs-P7-c3Z">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="BFs-P7-c3Z">
                                             <connections>
                                                 <action selector="boardSpaceSixTapped" destination="AgC-eL-Hgc" id="ydS-1A-ysg"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" alignment="left" id="OOD-kn-W2B">
+                                <group width="0.90000000000000002" height="0.20000000000000001" alignment="center" id="OOD-kn-W2B">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="tG5-NF-K2M">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="tG5-NF-K2M">
                                             <connections>
                                                 <action selector="boardSpaceSevenTapped" destination="AgC-eL-Hgc" id="Un5-ma-7aY"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="8AF-AT-mdy">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="8AF-AT-mdy">
                                             <connections>
                                                 <action selector="boardSpaceEightTapped" destination="AgC-eL-Hgc" id="u2I-Jf-XXU"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="Vgq-08-9NF">
+                                        <button width="0.29999999999999999" widthAdjustment="4" height="1" alignment="left" id="Vgq-08-9NF">
                                             <connections>
                                                 <action selector="boardSpaceNineTapped" destination="AgC-eL-Hgc" id="fvj-DW-65n"/>
                                             </connections>
