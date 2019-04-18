@@ -1,19 +1,20 @@
 //
 //  Game.swift
-//  TicTacToe
+//  TicTacToeCore
 //
-//  Created by Andrew R Madsen on 9/11/18.
-//  Copyright © 2018 Lambda School. All rights reserved.
+//  Created by Nathanael Youngren on 4/17/19.
+//  Copyright © 2019 Nathanael Youngren. All rights reserved.
 //
 
 import Foundation
-import TicTacToeCore
 
 enum GameError: Error {
     case gameOver
 }
 
-struct Game {
+public struct Game {
+    
+    public init() {}
     
     private enum GameState {
         case active(GameBoard.Mark) // Active player
@@ -21,12 +22,12 @@ struct Game {
         case won(GameBoard.Mark) // Winning player
     }
     
-    mutating func restart() {
+    mutating public func restart() {
         board = GameBoard()
         gameState = .active(.x)
     }
     
-    mutating func makeMark(at coordinate: Coordinate) throws {
+    mutating public func makeMark(at coordinate: Coordinate) throws {
         guard case let GameState.active(player) = gameState else {
             throw GameError.gameOver
         }
@@ -45,7 +46,7 @@ struct Game {
         }
     }
     
-    private(set) var board = GameBoard()
+    public var board = GameBoard()
     private var gameState = GameState.active(.x) {
         didSet {
             switch gameState {
@@ -65,7 +66,7 @@ struct Game {
         }
     }
     
-    var activePlayer: GameBoard.Mark? = .x
-    var isOver: Bool = false
-    var winningPlayer: GameBoard.Mark? = nil
+    public var activePlayer: GameBoard.Mark? = .x
+    public var isOver: Bool = false
+    public var winningPlayer: GameBoard.Mark? = nil
 }

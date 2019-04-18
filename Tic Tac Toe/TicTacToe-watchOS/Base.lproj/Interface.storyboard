@@ -18,23 +18,27 @@
                             <items>
                                 <group width="1" alignment="left" id="v6b-pr-4P0">
                                     <items>
-                                        <label alignment="left" verticalAlignment="center" text="Label" id="QBk-Lc-wgH"/>
-                                        <button alignment="right" verticalAlignment="center" title="Reset" id="7kP-Gk-dej"/>
+                                        <label alignment="left" verticalAlignment="center" id="QBk-Lc-wgH"/>
+                                        <button alignment="right" verticalAlignment="center" title="Reset" id="7kP-Gk-dej">
+                                            <connections>
+                                                <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="psa-6x-eIa"/>
+                                            </connections>
+                                        </button>
                                     </items>
                                 </group>
                                 <group width="1" alignment="left" id="aQb-zj-aEZ">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="pBs-fJ-Rxc">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="pBs-fJ-Rxc">
                                             <connections>
                                                 <action selector="boardSpaceOneTapped" destination="AgC-eL-Hgc" id="sU0-o9-EUa"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Axc-2g-V5c">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="Axc-2g-V5c">
                                             <connections>
                                                 <action selector="boardSpaceTwoTapped" destination="AgC-eL-Hgc" id="xrh-sl-NDt"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="mNG-ID-ZEb">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="mNG-ID-ZEb">
                                             <connections>
                                                 <action selector="boardSpaceThreeTapped" destination="AgC-eL-Hgc" id="7bl-av-Wzt"/>
                                             </connections>
@@ -43,17 +47,17 @@
                                 </group>
                                 <group width="1" alignment="left" id="HgO-OR-gki">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="4E5-F7-CgH">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="4E5-F7-CgH">
                                             <connections>
                                                 <action selector="boardSpaceFourTapped" destination="AgC-eL-Hgc" id="at4-Nh-EXi"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="scC-0U-SIv">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="scC-0U-SIv">
                                             <connections>
                                                 <action selector="boardSpaceFiveTapped" destination="AgC-eL-Hgc" id="R9U-gI-BMe"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="BFs-P7-c3Z">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="BFs-P7-c3Z">
                                             <connections>
                                                 <action selector="boardSpaceSixTapped" destination="AgC-eL-Hgc" id="ydS-1A-ysg"/>
                                             </connections>
@@ -62,17 +66,17 @@
                                 </group>
                                 <group width="1" alignment="left" id="OOD-kn-W2B">
                                     <items>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="tG5-NF-K2M">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="tG5-NF-K2M">
                                             <connections>
                                                 <action selector="boardSpaceSevenTapped" destination="AgC-eL-Hgc" id="Un5-ma-7aY"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="8AF-AT-mdy">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="8AF-AT-mdy">
                                             <connections>
                                                 <action selector="boardSpaceEightTapped" destination="AgC-eL-Hgc" id="u2I-Jf-XXU"/>
                                             </connections>
                                         </button>
-                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" title="X" id="Vgq-08-9NF">
+                                        <button width="0.29999999999999999" widthAdjustment="4" alignment="left" id="Vgq-08-9NF">
                                             <connections>
                                                 <action selector="boardSpaceNineTapped" destination="AgC-eL-Hgc" id="fvj-DW-65n"/>
                                             </connections>
@@ -92,6 +96,7 @@
                         <outlet property="boardSpaceSixButton" destination="BFs-P7-c3Z" id="MME-Ym-v2U"/>
                         <outlet property="boardSpaceThreeButton" destination="mNG-ID-ZEb" id="BjW-kb-grY"/>
                         <outlet property="boardSpaceTwoButton" destination="Axc-2g-V5c" id="VbB-QU-OXK"/>
+                        <outlet property="gameStatusLabel" destination="QBk-Lc-wgH" id="Ua1-Ar-qk3"/>
                     </connections>
                 </controller>
             </objects>
